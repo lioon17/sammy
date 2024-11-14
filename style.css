@@ -1,0 +1,114 @@
+ 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(117deg, #ffffff 0%, rgba(0, 0, 0, 0.81) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: pink;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: gray;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff4690;
+    border: 2px solid white;
+}
+
+@media (max-width: 1148px) {
+    h1 {
+        font-size: 50px;
+    }
+    .btn {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 795px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+#showMessage {
+    display: none;
+}
+
+#showMessage h1 {
+    font-size: 50px;
+}
+
+/* Animate Text */
+.ml6 {
+    position: relative;
+}
+
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+.background {
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 50%;
+background-image: url('images/sammy.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 50%;
+z-index: 1;
+}
+
+/* Adjust position and size on smaller screens */
+@media (max-width: 768px) {
+.background {
+top: 0;
+left: 0;
+width: 40%; /* Smaller size for responsiveness */
+height: 40%; /* Adjusts height as well */
+}
+}
